@@ -1,0 +1,8 @@
+closure function 
+
+global scope and local scope
+
+Methods to declare variable
+variable
+let
+const
