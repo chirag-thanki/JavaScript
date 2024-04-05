@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HTML for input and button -->
+    <input id="userInput" type="text" />
+    <button onclick="processInput()">Submit</button>
+  </body>
+
+  <script>
+    // JavaScript function to process the input
+    function processInput() {
+      var input = document.getElementById("userInput").value;
+
+      // Use switch case to handle different inputs
+      switch (input) {
+        case "1":
+          alert("You entered one.");
+          break;
+        case "2":
+          alert("You entered two.");
+          break;
+        // Add more cases as needed
+        default:
+          alert("Input not recognized.");
+          break;
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Case</title>
+    <style>
+      body {
+        display: flex;
+        gap: 30px;
+      }
+      input {
+        width: auto;
+        height: auto;
+        flex-basis: 400px;
+      }
+      button {
+        font-size: 24px;
+      }
+      button:hover {
+        border-radius: 10px;
+        background-color: dimgray;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="userInput"
+      placeholder="Enter day from 1-7, monday being starting from 1"
+    />
+    <button onclick="processInput()">Click to get the answer!</button>
+  </body>
+  <script>
+    function processInput() {
+      var day = document.getElementById("userInput").value;
+      // var dayname; No need of this variable
+      switch (day) {
+        case "1":
+          //   document.write("Monday");
+          //   alert("Monday");
+          dayname = "Monday";
+          break;
+        case "2":
+          dayname = "Tuesday";
+          break;
+        case "3":
+          dayname = "Wednesday";
+          break;
+        case "4":
+          dayname = "Thursday";
+          break;
+        case "5":
+          dayname = "Friday";
+          break;
+        case "6":
+          dayname = "Saturday";
+          break;
+        case "7":
+          dayname = "Sunday";
+          break;
+        default:
+          dayname = "Invalid";
+          break;
+      }
+      document.write(dayname);
+    }
+  </script>
+</html>
