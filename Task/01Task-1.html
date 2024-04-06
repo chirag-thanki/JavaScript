@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+  </head>
+  <body>
+    <script>
+      var i;
+
+      // POST INCREMENT
+      for (i = 1; i <= 10; i++) {
+        document.write(i); //Output in one line
+        document.write(i + "<br>"); //Output in new line
+        // document.write("$ " + i + "<br>");
+      }
+
+      // PRE DECREMENT
+      // for (i = 9; i >= 1; --i) {
+      for (i = 10; i >= 1; i--) {
+        document.write(i);
+        document.write(i + "<br>");
+      }
+
+      document.write("<hr>"); //for a horizontal line
+
+      //NOTE: WHILE LOOP IS USED INSTEAD OF FOR LOOP WHEN WE DON'T WANT INITIALIZATION WITH VALUE.
+      i = 10;
+      while (i >= 1) {
+        document.write(--i);
+        document.write(--i + "<br>");
+      }
+    </script>
+  </body>
+</html>
