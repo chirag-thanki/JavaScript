@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle btn</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="small-large" onclick="small_large()"></div>
+</body>
+<script>
+    function small_large(){
+        document.getElementById("small-large").style.height="600px";
+        document.getElementById("small-large").style.width="600px";
+        // document.getElementById("small-large").style.backgroundColor="pink";
+        document.getElementById("small-large").style.transition="20s all linear";
+        // "all" is used when we want to target all css properties (Here, width & height combined)
+        // document.getElementById("small-large").style.transition="4s width";
+    }
+</script>
+</html>

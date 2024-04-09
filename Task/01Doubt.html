@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10px;
+            padding: 10px;
+        }
+        div{
+            width: 100%;
+            height: 100px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="one">Hello World!</h1>
+    <div>
+        <p id="two"></p>
+    </div>
+
+    
+</body>
+<script>
+       var a=  document.getElementById("one").textContent;
+       document.getElementById("two").innerHTML=a;
+    //    OR
+    document.getElementById("two").innerHTML=document.getElementById("one").textContent;;
+</script>
+</html>
