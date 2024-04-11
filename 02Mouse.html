@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="one">Hello</h1>
+    <!-- <button id="btn" onclick="toggle()" onmouseenter="toggle()" onmouseleave="toggle1()">Toggle</button> -->
+    <button id="btn" onclick="toggle()">Toggle</button>
+
+</body>
+<script>
+
+    // function toggle(){
+    //     document.getElementById("one").innerHTML;
+    //     document.getElementById("one").style.color="red";
+    // }
+    // function toggle1(){
+    //     document.getElementById("one").innerHTML;
+    //     document.getElementById("one").style.color="";
+    // }
+
+    // Toggle
+    function toggle(){
+
+        if (document.getElementById("one").style.color == "") {
+            
+            document.getElementById("one").style.color = "red";
+        } else {
+            document.getElementById("one").style.color = "";
+        }
+    }
+    </script>
+    
+    </html>

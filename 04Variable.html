@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaration of variables</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        table {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            /* border: 2px solid black; */
+            font-size: 20px;
+            border-collapse: collapse;
+        }
+
+        td,
+        th,
+        tr {
+            padding: 10px 20px;
+            border: 2px solid black;
+        }
+
+        th {
+            font-size: 32px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Variable Types</h1>
+    <table>
+        <tr>
+            <th>Var</th>
+            <th>Let</th>
+            <th>Const</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Re-assignment is possible.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Re-assignment is possible.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Re-assignment is <b>NOT</b> possible.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Re-declaration is possible.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Re-declaration is <b>NOT</b> possible.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Re-declaration is <b>NOT</b> possible.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Used when you want the same variable name with different values</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Used when you want the variable values to change frequently</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Used when you want the variable values to keep fixed. i.e. PI = 3.14 is fixed.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30;
+
+    //    REASSIGNING VARIABLES
+    a = 40; //var can be re-assigned
+    b = 50; //let can be re-assigned
+    //    c = 60; //constant can not be re-assigned
+
+
+    //    REDECLARARING VARIABLES
+    var a = 100; //var can be re-declared also
+    //    let b = 200; //Can't be re-declared
+    //    const c = 300; // Can't be re-declared
+    console.log("a = " + a);
+    console.log("b = " + b);
+    console.log("c = " + c);
+</script>
+
+</html>
